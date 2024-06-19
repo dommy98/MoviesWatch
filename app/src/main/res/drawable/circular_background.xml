@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer ring with first color gradient -->
+    <item>
+        <shape
+            android:shape="oval">
+            <size
+                android:width="200dp"
+                android:height="200dp" />
+            <gradient
+                android:startColor="#0000FF"
+                android:centerColor="#FFC0CB"
+                android:endColor="#800080"
+                android:angle="0"
+                android:type="linear" />
+        </shape>
+    </item>
+
+    <!-- Inner transparent ring to create the ring effect -->
+    <item android:left="40dp" android:top="40dp" android:right="40dp" android:bottom="40dp">
+        <shape
+            android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+
+</layer-list>
+
